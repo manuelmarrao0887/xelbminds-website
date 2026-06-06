@@ -4,7 +4,7 @@ import Button from '../components/Button'
 export default function NotFound() {
   usePageMeta('Página não encontrada — XelbMinds')
   return (
-    <div className="container-x flex min-h-[60vh] flex-col items-center justify-center py-24 text-center">
+    <div className="container-x flex min-h-[60svh] flex-col items-center justify-center py-24 text-center">
       <p className="font-display text-7xl font-bold text-green">404</p>
       <h1 className="mt-4 text-3xl font-semibold">Página não encontrada</h1>
       <p className="mt-3 max-w-md text-body">

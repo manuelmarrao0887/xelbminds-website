@@ -28,7 +28,7 @@ export default function Home() {
         <span className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-green-100 blur-3xl" />
         <span className="pointer-events-none absolute -left-24 top-40 h-80 w-80 rounded-full bg-blue-100 blur-3xl" />
 
-        <div className="container-x relative grid items-center gap-12 py-16 lg:grid-cols-2 lg:py-24">
+        <div className="container-x relative grid grid-cols-1 items-center gap-12 py-16 lg:grid-cols-2 lg:py-24">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-green/50 bg-white/70 px-4 py-1.5 font-heading text-sm font-bold text-blue-700">
               <Icon name="pin" className="h-4 w-4 text-green-600" />
@@ -44,10 +44,10 @@ export default function Home() {
               emocional e pessoal de cada aluno.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button to="/servicos" variant="primary" size="lg" icon="arrow">
+              <Button to="/servicos" variant="primary" size="lg" icon="arrow" className="w-full sm:w-auto">
                 Ver os nossos serviços
               </Button>
-              <Button to="/contactos" variant="outline" size="lg" icon="chat">
+              <Button to="/contactos" variant="outline" size="lg" icon="chat" className="w-full sm:w-auto">
                 Falar connosco
               </Button>
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
 
       {/* ── Secção 2 — Apresentação e Missão ────────────────────────── */}
       <Section tone="soft">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <Reveal className="order-2 lg:order-1">
             <div className="overflow-hidden rounded-[2rem] shadow-card">
               <SmartImage
@@ -124,7 +124,7 @@ export default function Home() {
           eyebrow="Apoio especializado, pensado para cada aluno"
           title="O que fazemos na XelbMinds"
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <ServiceCard key={s.id} service={s} delay={i * 60} />
           ))}
@@ -142,7 +142,7 @@ export default function Home() {
           eyebrow="Porquê a XelbMinds?"
           title="O que as famílias encontram na XelbMinds"
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {differentiators.map((d, i) => (
             <FeatureCard key={d.title} {...d} delay={i * 60} />
           ))}
@@ -176,7 +176,7 @@ export default function Home() {
             title="Aprender a aprender, para a vida inteira."
             subtitle="Acreditamos que o maior apoio que podemos dar a um aluno é ensiná-lo a estudar por si próprio. Trabalhamos competências de organização, planeamento, memorização e gestão do tempo, que fazem a diferença não apenas nos testes, mas em toda a vida académica e pessoal."
           />
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
             {autonomyPillars.map((p, i) => (
               <Reveal key={p.title} delay={i * 80} className="h-full">
                 <div className="h-full rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm">
@@ -205,7 +205,7 @@ export default function Home() {
             Ver todos os artigos
           </Button>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {latest.map((post, i) => (
             <BlogCard key={post.id} post={post} delay={i * 60} />
           ))}

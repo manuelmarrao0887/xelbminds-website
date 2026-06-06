@@ -25,7 +25,7 @@ export default function Sobre() {
 
       {/* ── A Nossa História ────────────────────────────────────────── */}
       <Section tone="white">
-        <div className="grid items-start gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
           <div>
             <SectionHeading
               align="left"
@@ -84,7 +84,7 @@ export default function Sobre() {
 
       {/* ── Missão, Visão e Valores ─────────────────────────────────── */}
       <Section tone="soft">
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <Reveal className="h-full">
             <div className="flex h-full flex-col rounded-[1.75rem] bg-blue-900 p-8 text-blue-50">
               <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-green text-ink">
@@ -117,7 +117,7 @@ export default function Sobre() {
           eyebrow="Os nossos valores"
           title="Aquilo em que acreditamos"
         />
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((v, i) => (
             <ValueCard key={v.title} {...v} delay={i * 50} />
           ))}
@@ -131,7 +131,7 @@ export default function Sobre() {
           title="Como trabalhamos com os nossos alunos"
           subtitle="O nosso método de trabalho assenta em quatro etapas."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {approachSteps.map((s, i) => (
             <StepItem key={s.title} index={i + 1} {...s} delay={i * 70} />
           ))}
@@ -145,7 +145,7 @@ export default function Sobre() {
           title="Quem está por detrás da XelbMinds"
           subtitle="A XelbMinds é feita de pessoas comprometidas com a educação, não apenas com o conhecimento académico, mas com o desenvolvimento integral de cada aluno. A nossa equipa é formada por profissionais com formação especializada, experiência no acompanhamento de crianças e jovens e uma postura pedagógica empática, exigente e motivadora."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {team.map((m, i) => (
             <Reveal key={i} delay={i * 70} className="h-full">
               <div className="flex h-full flex-col items-center rounded-[1.5rem] border border-line bg-white p-8 text-center shadow-card">

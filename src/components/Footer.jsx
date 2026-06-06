@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-blue-900 text-blue-100">
       <div className="container-x py-14">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Marca */}
           <div className="lg:col-span-1">
             <img

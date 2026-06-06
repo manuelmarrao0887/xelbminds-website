@@ -30,7 +30,7 @@ export default function Contactos() {
       />
 
       <Section tone="white">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr]">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.2fr]">
           {/* Informações de contacto */}
           <div>
             <h2 className="text-2xl font-semibold">Informações de contacto</h2>
@@ -59,11 +59,11 @@ export default function Contactos() {
               ))}
             </ul>
 
-            <div className="mt-6 flex gap-3">
-              <Button href={`tel:${site.phoneRaw}`} variant="primary" icon="phone">
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <Button href={`tel:${site.phoneRaw}`} variant="primary" icon="phone" className="w-full sm:w-auto">
                 Ligar agora
               </Button>
-              <Button href={`mailto:${site.email}`} variant="outline" icon="mail">
+              <Button href={`mailto:${site.email}`} variant="outline" icon="mail" className="w-full sm:w-auto">
                 Enviar email
               </Button>
             </div>
@@ -101,10 +101,10 @@ export default function Contactos() {
               filho.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button href={`tel:${site.phoneRaw}`} variant="primary" size="lg" icon="phone">
+              <Button href={`tel:${site.phoneRaw}`} variant="primary" size="lg" icon="phone" className="w-full sm:w-auto">
                 Ligar agora: {site.phone}
               </Button>
-              <Button href={`mailto:${site.email}`} variant="outline" size="lg" icon="mail">
+              <Button href={`mailto:${site.email}`} variant="outline" size="lg" icon="mail" className="w-full sm:w-auto">
                 Enviar email
               </Button>
             </div>

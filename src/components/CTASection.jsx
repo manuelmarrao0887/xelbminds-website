@@ -33,13 +33,14 @@ export default function CTASection({
                 {subtitle}
               </p>
             )}
-            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row">
               <Button
                 to={primary.to}
                 href={primary.href}
                 icon={primary.icon}
                 variant={tone === 'blue' ? 'white' : 'primary'}
                 size="lg"
+                className="w-full sm:w-auto"
               >
                 {primary.label}
               </Button>
@@ -49,6 +50,7 @@ export default function CTASection({
                   icon="phone"
                   variant={tone === 'blue' ? 'white-outline' : 'outline'}
                   size="lg"
+                  className="w-full sm:w-auto"
                 >
                   Ligar agora: {site.phone}
                 </Button>

@@ -91,7 +91,7 @@ export default function AdminEditor() {
   if (!loaded) return <p className="text-muted">A carregar…</p>
 
   const fieldCls = (name) =>
-    `w-full rounded-xl border bg-white px-4 py-2.5 text-[15px] text-ink outline-none transition-colors focus:border-blue ${
+    `w-full rounded-xl border bg-white px-4 py-2.5 text-base text-ink outline-none transition-colors focus:border-blue ${
       errors[name] ? 'border-red-400' : 'border-line'
     }`
 
@@ -109,14 +109,14 @@ export default function AdminEditor() {
         {editing ? 'Editar artigo' : 'Novo artigo'}
       </h1>
 
-      <form onSubmit={onSubmit} noValidate className="mt-6 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+      <form onSubmit={onSubmit} noValidate className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-[1.4fr_1fr]">
         {/* Coluna principal */}
         <div className="space-y-5 rounded-2xl border border-line bg-white p-6">
           <Field label="Título" required error={errors.title} htmlFor="title">
             <input id="title" name="title" value={form.title} onChange={update} className={fieldCls('title')} />
           </Field>
 
-          <div className="grid gap-5 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <Field label="Categoria" htmlFor="category">
               <select id="category" name="category" value={form.category} onChange={update} className={fieldCls('category')}>
                 {categories.map((c) => (
@@ -146,7 +146,7 @@ export default function AdminEditor() {
               rows={16}
               value={form.bodyText}
               onChange={update}
-              className={`${fieldCls('bodyText')} resize-y font-mono text-sm leading-relaxed`}
+              className={`${fieldCls('bodyText')} resize-y font-mono text-base leading-relaxed`}
               placeholder={'Introdução do artigo…\n\n## Primeiro subtítulo\n\nTexto do parágrafo…'}
             />
           </Field>

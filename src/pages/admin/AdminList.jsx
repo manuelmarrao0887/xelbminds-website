@@ -97,7 +97,7 @@ export default function AdminList() {
                 <div className="flex shrink-0 items-center gap-1">
                   <Link
                     to={`/blog/${post.id}`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-xl text-muted transition-colors hover:bg-soft hover:text-blue cursor-pointer"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-muted transition-colors hover:bg-soft hover:text-blue cursor-pointer"
                     title="Ver no site"
                     target="_blank"
                   >
@@ -105,7 +105,7 @@ export default function AdminList() {
                   </Link>
                   <Link
                     to={`/admin/editar/${post.id}`}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-xl text-muted transition-colors hover:bg-blue-50 hover:text-blue cursor-pointer"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-muted transition-colors hover:bg-blue-50 hover:text-blue cursor-pointer"
                     title="Editar"
                   >
                     <Icon name="edit" className="h-5 w-5" />
@@ -113,7 +113,7 @@ export default function AdminList() {
                   <button
                     type="button"
                     onClick={() => onDelete(post)}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-xl text-muted transition-colors hover:bg-red-50 hover:text-red-500 cursor-pointer"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-muted transition-colors hover:bg-red-50 hover:text-red-500 cursor-pointer"
                     title="Eliminar"
                   >
                     <Icon name="trash" className="h-5 w-5" />

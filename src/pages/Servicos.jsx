@@ -12,7 +12,7 @@ function ServiceBlock({ service, index }) {
   const reversed = index % 2 === 1
   return (
     <article id={service.id} className="scroll-mt-28">
-      <div className="grid items-center gap-10 lg:grid-cols-2">
+      <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
         {/* Imagem */}
         <Reveal className={reversed ? 'lg:order-2' : ''}>
           <div className="relative overflow-hidden rounded-[2rem] shadow-card">
@@ -54,7 +54,7 @@ function ServiceBlock({ service, index }) {
             </ul>
           </div>
 
-          <dl className="mt-5 grid gap-4 sm:grid-cols-2">
+          <dl className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="rounded-xl border border-line bg-white p-4">
               <dt className="font-heading text-xs font-bold uppercase tracking-wide text-muted">
                 Para quem
@@ -72,7 +72,7 @@ function ServiceBlock({ service, index }) {
           <Button
             to="/contactos"
             variant="primary"
-            className="mt-6"
+            className="mt-6 w-full sm:w-auto"
             icon="arrow"
           >
             Pedir informações sobre este serviço

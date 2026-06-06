@@ -79,7 +79,7 @@ export default function ContactForm() {
   }
 
   const fieldCls = (name) =>
-    `w-full rounded-xl border bg-white px-4 py-3 text-[15px] text-ink outline-none transition-colors placeholder:text-muted/70 focus:border-blue ${
+    `w-full rounded-xl border bg-white px-4 py-3 text-base text-ink outline-none transition-colors placeholder:text-muted/70 focus:border-blue ${
       errors[name] ? 'border-red-400' : 'border-line'
     }`
 
@@ -92,7 +92,7 @@ export default function ContactForm() {
           <input id="guardian" name="guardian" type="text" value={form.guardian} onChange={update} className={fieldCls('guardian')} autoComplete="name" />
         </Field>
 
-        <div className="grid gap-5 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           <Field label="Email" error={errors.email} required htmlFor="email">
             <input id="email" name="email" type="email" value={form.email} onChange={update} className={fieldCls('email')} autoComplete="email" />
           </Field>

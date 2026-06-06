@@ -149,7 +149,7 @@ export default function Artigo() {
       {suggestions.length > 0 && (
         <Section tone="soft">
           <h2 className="text-2xl font-semibold">Continue a ler</h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {suggestions.map((p, i) => (
               <BlogCard key={p.id} post={p} delay={i * 60} />
             ))}
